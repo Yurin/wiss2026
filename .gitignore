@@ -1,0 +1,32 @@
+# Dependencies and local build state
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+**/xcuserdata/
+*.xcuserstate
+build/
+DerivedData/
+
+# Secrets, private runtime data and logs
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+*.key
+*.p12
+*.mobileprovision
+*.log
+**/data/
+**/uploads/
+
+# Historical documentation stays local; deploy only the current specification.
+docs/archive/
+
+# Only the three required guide-generation models are versioned.
+*.pt
+!WISS-Pair/backend/yolov8n.pt
+!WISS-Pair/backend/yolov8n-pose.pt
+!WISS-Pair/backend/yolo11s-seg.pt

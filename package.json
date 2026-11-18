@@ -1,0 +1,22 @@
+{
+  "name": "wiss-challenge-production",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start:one": "node WISS-Pair/backend/server.js",
+    "start:many": "node WISS-Together/backend/server.js",
+    "worker": "node shared/venue-worker.js",
+    "start:pair": "node WISS-Pair/backend/server.js",
+    "start:together": "node WISS-Together/backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.2",
+    "multer": "^2.0.2",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.35.5",
+    "ws": "^8.21.0"
+  }
+}

@@ -1,0 +1,12 @@
+Ultralytics guide-generation dependencies and pretrained models
+
+This project uses Ultralytics for guide image generation and includes the following pretrained model files:
+- WISS-Pair/backend/yolov8n.pt
+- WISS-Pair/backend/yolov8n-pose.pt
+- WISS-Pair/backend/yolo11s-seg.pt
+
+Upstream: https://github.com/ultralytics/ultralytics
+Pretrained assets: https://github.com/ultralytics/assets
+The upstream license text from the installed Ultralytics distribution (8.4.56) is included in licenses/Ultralytics-LICENSE.txt.
+This notice does not assign a new license to the project's own code.
+Node.js and Python dependencies retain their respective upstream notices and licenses.
