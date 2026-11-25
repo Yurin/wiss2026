@@ -10,7 +10,8 @@
     "start:many": "node WISS-Together/backend/server.js",
     "worker": "node shared/venue-worker.js",
     "start:pair": "node WISS-Pair/backend/server.js",
-    "start:together": "node WISS-Together/backend/server.js"
+    "start:together": "node WISS-Together/backend/server.js",
+    "test:pair": "node WISS-Pair/backend/test/photographer-start.test.js && node WISS-Pair/backend/test/photographer-end.test.js && node WISS-Pair/backend/test/session-flow.test.js"
   },
   "dependencies": {
     "express": "^4.22.2",

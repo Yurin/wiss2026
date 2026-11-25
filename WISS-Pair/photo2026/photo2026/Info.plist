@@ -16,9 +16,9 @@
 		</dict>
 	</array>
 	<key>API_BASE_URL</key>
-	<string>https://configure-server.invalid</string>
+	<string>https://photo-interface.com:8443</string>
 	<key>WEB_APP_BASE_URL</key>
-	<string>https://configure-server.invalid</string>
+	<string>https://photo-interface.com:8443</string>
 	<key>NSCameraUsageDescription</key>
 	<string>撮影への参加用QRコードを読み取るためにカメラを使用します。</string>
 	<key>NSLocalNetworkUsageDescription</key>

@@ -99,7 +99,7 @@ struct CropEditorView: View {
                 Label("この範囲に決定", systemImage: "checkmark")
                     .frame(maxWidth: .infinity)
             }
-            .buttonStyle(.borderedProminent)
+            .buttonStyle(AppPrimaryButtonStyle())
         }
         .padding(.horizontal, 18)
         .padding(.top, 12)

@@ -4,6 +4,7 @@ Ultralytics YOLO を使った人物検出・セグメンテーション・姿勢
 通常ガイドは人物bboxだけを使い、シルエットガイドではmask/keypointsも使います。
 """
 import os
+from pathlib import Path
 from typing import Optional, Tuple
 
 try:
@@ -35,6 +36,9 @@ def load_model(weights: str | None = None, task: str = "detect"):
         "pose": os.environ.get("YOLO_POSE_WEIGHTS", "yolov8n-pose.pt"),
     }
     model_weights = weights or default_weights.get(task, "yolov8n.pt")
+    model_path = Path(model_weights)
+    if not model_path.is_absolute():
+        model_weights = str(Path(__file__).resolve().parent.parent / model_path)
     cache_key = (task, model_weights)
 
     if cache_key not in _models:
